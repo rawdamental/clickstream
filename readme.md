@@ -1,8 +1,6 @@
 # Rawdamental - Clickstream
 [![](https://forthebadge.com/images/badges/made-with-javascript.svg)]() [![](https://forthebadge.com/images/badges/built-with-love.svg)](https://www.rawdamental.com)
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-
 # Introduction
 
 Clickstream is a Software as a Service (Saas) which tracks website visitors and data and give you the power to collect this raw data by our API. This tools give's you the followowing benefits: 
