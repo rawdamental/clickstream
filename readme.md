@@ -54,20 +54,28 @@ clickstream('page-type', 'home', 'event');
 Specific system parameters can omit the namespace, for example the dnt parameter to specify a user wants to opt-out of storing cookies and tracking. Custom parameters can be send in the event and user namespaces. The event namespace is used for parameters about the event that is being tracker, for example what type of page a user is viewing or a product id. The user namespace is used for parameters about the user triggering the event, for example the id of the logged in user.
 
 #### Use Google Tagmanager
-1. Create snippet
+1. Head over to Google Tag Manager and log in to your account. Once you’re in, select **New Tag**.
+2. On the next page, label the new tag if you wish, and select **Custom HTML Tag**.
+3. Paste in the following code (remember you need a DATA-TOKEN provided by us):
+```html
+<script src="https://embracecontext.com/clickstream.js" async data-token="XXX"></script>
+```
+4. Click on Triggering and select DOM Ready as the Trigger.
+5. Click Publish. Now, any time the GTM is loaded, it will call that JavaScript that you’ve added.
+
+GTM also allows you to preview the changes before pushing live, so you can test to make sure everything is working!
 
 ### Available data fields by API
 
-Currently these are the available datafields in the API, for further information about the API see our Swagger documenatation on www.jebenteenswagger.com.
+Currently these are the available datafields in the API, for further information about the API see our Swagger documenatation.
 
 | Name | Example | Info
 | ------ | ------ | ------ |
 | UID | 067e6162-3b6f-4ae2-a171-2470b63dff00 | Unique request ID
 
-
 ### Todos
 
- - Finish this document
+ - Add link to swagger documentation, if you are interested (as a early adaptor) please leave us a message. 
 
 License
 ----
