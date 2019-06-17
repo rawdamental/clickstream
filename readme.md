@@ -69,11 +69,12 @@ You can also track visitors in e-mails, advertisements (for example eBay) and ot
 Specific system parameters can omit the namespace, for example the dnt parameter to specify a user wants to opt-out of storing cookies and tracking. Custom parameters can be send in the **event** and **user** namespaces. The event namespace is used for parameters about the event that is being tracker, for example what type of page a user is viewing or a product id. The user namespace is used for parameters about the user triggering the event, for example the id of the logged in user.
 
 #### System parameters
-The table below shows a list of system parameters which influens the behavior of the script  
-| Name | Value | Info
+The table below shows a list of system parameters which influens the behavior of the script
+
+| Name | Value | Info |
 | ------ | ------ | ------ |
-| dnt | 1/0 | Anonymize the visitors Ip address and disable tracking 
-| anonymize-ip | 1 | Anonymize the visitors Ip address
+| dnt | 1/0 | Anonymize the visitors Ip address and disable tracking |
+| anonymize-ip | 1 | Anonymize the visitors Ip address |
 
 #### How to add extra parameters
 
@@ -101,7 +102,7 @@ When using the tracking pixel please provide the DATA- attributes in the src URL
 
 Currently these are the available datafields in the API, for further information about the API see our Swagger documenatation.
 
-| Name | Example | Info
+| Name | Example | Info |
 | ------ | ------ | ------ |
 | _id | 067e6162-3b6f-4ae2-a171-2470b63dff00 | Unique request ID
 | timestamp | 2019-06-10T00:07:08Z | Current timestamp of the request
