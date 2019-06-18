@@ -42,7 +42,7 @@ The token parameter must be set when implementing the script. Parameters can be 
 ```html
 <script src="https://embracecontext.com/clickstream.js" async data-token="XXX"></script>
 ```
-4. Click on Triggering and select DOM Ready as the Trigger.
+4. Click on Triggering and select **DOM Ready as the Trigger**.
 5. Click Publish. Now, any time the GTM is loaded, it will call that JavaScript that you’ve added.
 
 GTM also allows you to preview the changes before pushing live, so you can test to make sure everything is working!
@@ -66,7 +66,7 @@ You can also track visitors in e-mails, advertisements (for example eBay) and ot
 ```
 
 ### Extra parameters
-Specific system parameters can omit the namespace, for example the dnt parameter to specify a user wants to opt-out of storing cookies and tracking. Custom parameters can be send in the **event** and **user** namespaces. The event namespace is used for parameters about the event that is being tracker, for example what type of page a user is viewing or a product id. The user namespace is used for parameters about the user triggering the event, for example the id of the logged in user.
+Specific system parameters can omit the namespace, for example the dnt parameter to specify a user wants to opt-out of storing cookies and tracking. Custom parameters can be send in the **event** and **user** namespaces. The **event** namespace is used for parameters about the event that is being tracker, for example what type of page a user is viewing or a product id. The **user** namespace is used for parameters about the user triggering the event, for example the id of the logged in user.
 
 #### System parameters
 The table below shows a list of system parameters which influens the behavior of the script
@@ -78,7 +78,7 @@ The table below shows a list of system parameters which influens the behavior of
 
 #### How to add extra parameters
 
-You can always add DATA- attributes into the script tag. 
+You can always add DATA-* attributes into the script tag. 
 
 ```html
 <script src="https://embracecontext.com/clickstream.js" async data-token="XXX" data-event-example="Foo"></script>
@@ -93,14 +93,14 @@ clickstream('page-type', 'home', 'event');
 ```
 
 
-When using the tracking pixel please provide the DATA- attributes in the src URL.
+When using the tracking pixel please provide the DATA-* attributes in the src URL.
 
 ```html 
 <img height="1" width="1" style="display:none" src="https://embracecontext.com/p.gif?token=XXX&event[example]=Foo">
 ```
 ### Available data fields by API
 
-Currently these are the available datafields in the API, for further information about the API see our Swagger documenatation.
+Currently these are the most common datafields in the API, for further information about the API see our [Swagger documenatation](https://rawdamental.github.io/clickstream-api/).
 
 | Name | Example | Info |
 | ------ | ------ | ------ |
@@ -128,7 +128,7 @@ Currently these are the available datafields in the API, for further information
 
 ### Todos
 
- - Add link to swagger documentation, if you are interested (as a early adaptor) please leave us a message. 
+ - Extend list with available datafields for API
 
 License
 ----
