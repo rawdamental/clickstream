@@ -38,9 +38,15 @@ The token parameter must be set when implementing the script. Parameters can be 
 #### Using Google Tagmanager
 1. Head over to Google Tag Manager and log in to your account. Once you’re in, select **New Tag**.
 2. On the next page, label the new tag if you wish, and select **Custom HTML Tag**.
-3. Paste in the following code (remember you need a DATA-TOKEN provided by us):
+3. Paste in the following code (remember you need a TOKEN provided by us):
 ```html
-<script src="https://embracecontext.com/clickstream.js" async data-token="XXX"></script>
+<script>
+  window._clickstream=window._clickstream||[];
+  function clickstream(p,v,n){var
+e=encodeURIComponent;_clickstream.push(e(n?n+'['+p+']':p)+'='+e(v))}
+  clickstream('token', 'XXX');
+</script>
+<script src="https://embracecontext.com/clickstream.js" async></script>
 ```
 4. Click on Triggering and select **DOM Ready as the Trigger**.
 5. Click Publish. Now, any time the GTM is loaded, it will call that JavaScript that you’ve added.
