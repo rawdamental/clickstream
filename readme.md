@@ -42,8 +42,7 @@ The token parameter must be set when implementing the script. Parameters can be 
 ```html
 <script>
   window._clickstream=window._clickstream||[];
-  function clickstream(p,v,n){var
-e=encodeURIComponent;_clickstream.push(e(n?n+'['+p+']':p)+'='+e(v))}
+  function clickstream(p,v,n){var e=encodeURIComponent;_clickstream.push(e(n?n+'['+p+']':p)+'='+e(v))}
   clickstream('token', 'XXX');
 </script>
 <script src="https://embracecontext.com/clickstream.js" async></script>
@@ -59,8 +58,7 @@ We also provide a extended implemantation if you like to add more parameters.
 ```html
 <script>
   window._clickstream=window._clickstream||[];
-  function clickstream(p,v,n){var
-e=encodeURIComponent;_clickstream.push(e(n?n+'['+p+']':p)+'='+e(v))}
+  function clickstream(p,v,n){var e=encodeURIComponent;_clickstream.push(e(n?n+'['+p+']':p)+'='+e(v))}
 </script>
 <script src="https://embracecontext.com/clickstream.js" async data-token="XXX"></script>
 ```
