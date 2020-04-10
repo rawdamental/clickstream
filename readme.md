@@ -3,9 +3,9 @@
 
 # Introduction
 
-Clickstream is a Software as a Service (Saas) which tracks website visitors and data and give you the power to collect this raw data by our API. This tools give's you the followowing benefits: 
+Clickstream is a Software as a Service (Saas) which tracks website visitors and data and gives you the power to collect this raw data by our API. This tools gives you the following benefits: 
 
-  - Handle huge amount off visitors 
+  - Handle huge amount of visitors 
   - Save over more than 60 different datafields
   - Add your own data layer with extra information
   - GDPR Compliant
@@ -18,7 +18,7 @@ Clickstream is a Software as a Service (Saas) which tracks website visitors and 
 
 ### Getting Started
 
-These instructions will get you a working script recording visitors data on your website and store it to our system, it also provide you guidelines for a GDPR friendly implemantation. First you need a DATA-TOKEN 
+These instructions will get you a working script recording visitors data on your website and store it to our system, it also provide you guidelines for a GDPR friendly implementation. First you need a DATA-TOKEN 
 
 ### Installation
 Depencies
@@ -33,7 +33,7 @@ Please insert the following code into your <head> Tag
 ```html
 <script src="https://embracecontext.com/clickstream.js" async data-token="XXX"></script>
 ```
-The token parameter must be set when implementing the script. Parameters can be added using data-* attributes on the script tag. For example, data-dnt="1" can be added to set the extra dnt (Do not track) parameter which anonymise the website visitor.
+The token parameter must be set when implementing the script. Parameters can be added using data-* attributes on the script tag. For example, data-dnt="1" can be added to set the extra dnt (Do not track) parameter which anonymises the website visitor.
 
 #### Using Google Tagmanager
 1. Head over to Google Tag Manager and log in to your account. Once you’re in, select **New Tag**.
@@ -73,7 +73,7 @@ You can also track visitors in e-mails, advertisements (for example eBay) and ot
 Specific system parameters can omit the namespace, for example the dnt parameter to specify a user wants to opt-out of storing cookies and tracking. Custom parameters can be send in the **event** and **user** namespaces. The **event** namespace is used for parameters about the event that is being tracker, for example what type of page a user is viewing or a product id. The **user** namespace is used for parameters about the user triggering the event, for example the id of the logged in user.
 
 #### System parameters
-The table below shows a list of system parameters which influens the behavior of the script
+The table below shows a list of system parameters which influences the behavior of the script
 
 | Name | Value | Info |
 | ------ | ------ | ------ |
@@ -88,7 +88,7 @@ You can always add DATA-* attributes into the script tag.
 <script src="https://embracecontext.com/clickstream.js" async data-token="XXX" data-event-example="Foo"></script>
 ```
 
-When using the extended version of the script parameters can be added using the clickstream(parameter, value[, namespace]) function. For example:
+When using the extended version of the script, parameters can be added using the clickstream(parameter, value[, namespace]) function. For example:
 
 ```html 
 <script>
